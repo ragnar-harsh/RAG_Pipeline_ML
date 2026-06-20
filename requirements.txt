@@ -1,0 +1,11 @@
+pandas
+scikit-learn
+unstructured[all-docs]
+langchain_chroma 
+langchain
+langchain_community
+langchain_ollama
+langchain_huggingface
+python_dotenv
+sentence-transformers
+
