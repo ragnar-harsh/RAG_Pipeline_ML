@@ -1,0 +1,19 @@
+[ 2026-06-23 19:35:51,912 ] 16 root - INFO - ---------------- Application Started -------------------
+[ 2026-06-23 19:35:51,913 ] 31 root - INFO - Extracting elements from pdf using Unstructured - ./Notebook/NIPS-2017-attention-is-all-you-need-Paper.pdf
+[ 2026-06-23 19:35:51,918 ] 13 pikepdf._core - INFO - pikepdf C++ to Python logger bridge initialized
+[ 2026-06-23 19:35:53,502 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/unstructuredio/yolo_x_layout/resolve/main/yolox_l0.05.onnx "HTTP/1.1 302 Found"
+[ 2026-06-23 19:35:53,503 ] 904 huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[ 2026-06-23 19:35:54,347 ] 63 unstructured_inference - INFO - Reading PDF for file: ./Notebook/NIPS-2017-attention-is-all-you-need-Paper.pdf ...
+[ 2026-06-23 19:36:11,477 ] 183 unstructured_inference - INFO - Loading the Table agent ...
+[ 2026-06-23 19:36:12,036 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+[ 2026-06-23 19:36:12,326 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+[ 2026-06-23 19:36:12,389 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/table-transformer-structure-recognition/f4d4bdc85c3fe4b1fa49658882a5d38bbdd0f343/preprocessor_config.json "HTTP/1.1 200 OK"
+[ 2026-06-23 19:36:12,393 ] 100 unstructured_inference - INFO - Loading table structure model to cpu...
+[ 2026-06-23 19:36:12,752 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[ 2026-06-23 19:36:12,813 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/table-transformer-structure-recognition/f4d4bdc85c3fe4b1fa49658882a5d38bbdd0f343/config.json "HTTP/1.1 200 OK"
+[ 2026-06-23 19:36:13,130 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+[ 2026-06-23 19:36:13,591 ] 114 unstructured_inference - INFO - Table model successfully loaded to cpu
+[ 2026-06-23 19:36:40,740 ] 44 root - INFO - Extracted Elements -- 173
+[ 2026-06-23 19:36:40,746 ] 61 root - INFO - Exporting to File - Ingestion_IG0023
+[ 2026-06-23 19:36:40,752 ] 8 root - ERROR - Error occured in python script name [G:\Repositories\RAG_Pipeline_ML\src\RAG_Pipeline\utils.py] line number [78] error message[Object of type Title is not JSON serializable]
+[ 2026-06-23 19:36:40,753 ] 8 root - ERROR - Error occured in python script name [G:\Repositories\RAG_Pipeline_ML\app.py] line number [33] error message[Object of type Title is not JSON serializable]

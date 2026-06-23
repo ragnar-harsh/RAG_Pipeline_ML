@@ -20,11 +20,11 @@ class DataIngestionConfig:
 
 class DataIngestion:
     def __init__(self):
-        # pass
-        self.ingestion_config = DataIngestionConfig()
+        pass
+        # self.ingestion_config = DataIngestionConfig()
 
 
-    def partition_document(file_path: str):
+    def partition_document(self, file_path: str):
         """Extract elements from pdf using Unstructured"""
         try:
             # pass
@@ -47,10 +47,10 @@ class DataIngestion:
 
         except Exception as ex:
             logging.error(f"Error Occured while document partitioning {ex}")
-            # raise CustomException(ex, sys)
+            raise CustomException(ex, sys)
         
     
-    def get_element_details(idx, elements):
+    def get_element_details(self, elements, idx: int):
         '''Find Element details through Index'''
         try:
             # pass
@@ -63,7 +63,7 @@ class DataIngestion:
 
 
 
-    def get_elements_metadata(elements):
+    def get_elements_metadata(self, elements):
         '''Extract the raw type names, split by 'elements.', and take the last part'''
 
         try:
@@ -82,6 +82,8 @@ class DataIngestion:
             # print("\nType Counts:")
             # for element_type, count in type_counts.items():
             #     print(f"{element_type}: {count}")
+
+            logging.info(type_counts)
             
             return (
                 unique_types, 
@@ -89,10 +91,10 @@ class DataIngestion:
             )
         except Exception as ex:
             logging.error(f"Error during finding Meta Data")
-            # raise CustomException(ex, sys)
+            raise CustomException(ex, sys)
 
 
-    def gather_media_data(elements):
+    def gather_media_data(self, elements):
         '''Gather Images & Tables from the Elements'''
 
         try:
@@ -109,6 +111,7 @@ class DataIngestion:
             )
 
         except Exception as ex:
-            logging.error(f'Error Occured during collecting Images & Tables - {ex}')
+            # logging.error(f'Error Occured during collecting Images & Tables - {ex}')
+            raise CustomException(ex, sys)
 
 

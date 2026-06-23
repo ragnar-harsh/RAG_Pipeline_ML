@@ -1,0 +1,21 @@
+[ 2026-06-23 19:45:06,720 ] 16 root - INFO - ---------------- Application Started -------------------
+[ 2026-06-23 19:45:06,720 ] 31 root - INFO - Extracting elements from pdf using Unstructured - ./Notebook/NIPS-2017-attention-is-all-you-need-Paper.pdf
+[ 2026-06-23 19:45:06,735 ] 13 pikepdf._core - INFO - pikepdf C++ to Python logger bridge initialized
+[ 2026-06-23 19:45:08,372 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/unstructuredio/yolo_x_layout/resolve/main/yolox_l0.05.onnx "HTTP/1.1 302 Found"
+[ 2026-06-23 19:45:09,251 ] 63 unstructured_inference - INFO - Reading PDF for file: ./Notebook/NIPS-2017-attention-is-all-you-need-Paper.pdf ...
+[ 2026-06-23 19:45:27,088 ] 183 unstructured_inference - INFO - Loading the Table agent ...
+[ 2026-06-23 19:45:27,655 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+[ 2026-06-23 19:45:27,945 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/preprocessor_config.json "HTTP/1.1 307 Temporary Redirect"
+[ 2026-06-23 19:45:28,016 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/table-transformer-structure-recognition/f4d4bdc85c3fe4b1fa49658882a5d38bbdd0f343/preprocessor_config.json "HTTP/1.1 200 OK"
+[ 2026-06-23 19:45:28,031 ] 100 unstructured_inference - INFO - Loading table structure model to cpu...
+[ 2026-06-23 19:45:28,370 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+[ 2026-06-23 19:45:28,434 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/microsoft/table-transformer-structure-recognition/f4d4bdc85c3fe4b1fa49658882a5d38bbdd0f343/config.json "HTTP/1.1 200 OK"
+[ 2026-06-23 19:45:28,782 ] 1025 httpx - INFO - HTTP Request: HEAD https://huggingface.co/microsoft/table-transformer-structure-recognition/resolve/main/model.safetensors "HTTP/1.1 302 Found"
+[ 2026-06-23 19:45:29,393 ] 114 unstructured_inference - INFO - Table model successfully loaded to cpu
+[ 2026-06-23 19:45:56,951 ] 44 root - INFO - Extracted Elements -- 173
+[ 2026-06-23 19:45:56,956 ] 61 root - INFO - Exporting to File - Ingestion_IG0023
+[ 2026-06-23 19:45:56,958 ] 82 root - INFO - Successfully exported data to: G:\Repositories\RAG_Pipeline_ML\artifacts\RAG_Pipeline_Project\Ingestion_IG0023.json
+[ 2026-06-23 19:45:56,959 ] 86 root - INFO - Counter({'NarrativeText': 74, 'ListItem': 35, 'Title': 25, 'Text': 19, 'Footer': 6, 'Formula': 5, 'Image': 3, 'Table': 3, 'FigureCaption': 2, 'Header': 1})
+[ 2026-06-23 19:45:56,959 ] 105 root - INFO - Found: 3 Images
+[ 2026-06-23 19:45:56,960 ] 106 root - INFO - Found: 3 Tables
+[ 2026-06-23 19:45:56,960 ] 47 root - INFO - ---------------- Application Ended -------------------
